@@ -4,7 +4,7 @@
 #
 Name     : perl-Algorithm-Merge
 Version  : 0.08
-Release  : 10
+Release  : 11
 URL      : https://cpan.metacpan.org/authors/id/J/JS/JSMITH/Algorithm-Merge-0.08.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/J/JS/JSMITH/Algorithm-Merge-0.08.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/liba/libalgorithm-merge-perl/libalgorithm-merge-perl_0.08-3.debian.tar.xz
@@ -80,7 +80,7 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Algorithm-Merge
-cp %{_builddir}/Algorithm-Merge-0.08/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-Algorithm-Merge/19b171f4bdfdc6d15da5234a3c915c887decf9ab
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-Algorithm-Merge/19b171f4bdfdc6d15da5234a3c915c887decf9ab
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -104,4 +104,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/Algorithm/Merge.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Algorithm/Merge.pm
