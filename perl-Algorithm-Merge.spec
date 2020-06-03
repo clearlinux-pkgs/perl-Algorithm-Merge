@@ -4,7 +4,7 @@
 #
 Name     : perl-Algorithm-Merge
 Version  : 0.08
-Release  : 11
+Release  : 12
 URL      : https://cpan.metacpan.org/authors/id/J/JS/JSMITH/Algorithm-Merge-0.08.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/J/JS/JSMITH/Algorithm-Merge-0.08.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/liba/libalgorithm-merge-perl/libalgorithm-merge-perl_0.08-3.debian.tar.xz
@@ -104,4 +104,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.2/Algorithm/Merge.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Algorithm/Merge.pm
